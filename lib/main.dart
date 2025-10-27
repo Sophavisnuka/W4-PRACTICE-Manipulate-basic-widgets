@@ -12,23 +12,23 @@ void main() {
         builder: DevicePreview.appBuilder,
         debugShowCheckedModeBanner: false,
         title: 'My app',
-        home: Scaffold(
-          body: Center(
+        home: Container(
+          color: Colors.white,
+          child: Container(
+            margin: EdgeInsets.all(50),
+            color: Colors.blue,
             child: Container(
-              margin: EdgeInsets.all(50),
-              color: Colors.blue,
-              child: Container(
-                margin: EdgeInsets.all(30),
-                decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 0, 17, 255),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Center(
-                  child: Text(
-                    'CADT Students', style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                    ),
+              margin: EdgeInsets.all(30),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 0, 17, 255),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Center(
+                child: Text(
+                  'CADT Students', style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    decoration: TextDecoration.none,
                   ),
                 ),
               ),
